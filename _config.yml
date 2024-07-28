@@ -4,5 +4,3 @@ plugins:
   - jekyll-relative-links
 relative_links:
   enabled: true
-include:
-  - index.md
