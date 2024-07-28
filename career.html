@@ -6,12 +6,12 @@ title: Career
 <h1>Career</h1>
 
 <ul>
+  <li>
+    fake item
+  </li>
   {% for r in site.roles %}
     <li>
-      <h2>{{ r.company }}</h2>
-      <h3>{{ r.role }}</h3>
-      <h3>{{ r.from }} to {{ r.to}}</h3>
-      <p>{{ r.content | markdownify }}</p>
+      <p>{{ r.content }}</p>
     </li>
   {% endfor %}
 </ul>
