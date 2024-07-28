@@ -6,12 +6,12 @@ title: Career
 <h1>Career</h1>
 
 <ul>
-  {% for author in site.roles %}
+  {% for role in site.roles %}
     <li>
-      <h2>{{ roles.company }}</h2>
-      <h3>{{ roles.role }}</h3>
-      <h3>{{ roles.from }} to {{ roles.to}}</h3>
-      <p>{{ roles.content | markdownify }}</p>
+      <h2>{{ role.company }}</h2>
+      <h3>{{ role.role }}</h3>
+      <h3>{{ role.from }} to {{ role.to}}</h3>
+      <p>{{ role.content | markdownify }}</p>
     </li>
   {% endfor %}
 </ul>
