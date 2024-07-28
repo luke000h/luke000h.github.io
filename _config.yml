@@ -1,8 +1,8 @@
+collections:
+  roles:
 plugins:
   - jekyll-relative-links
 relative_links:
   enabled: true
-collections:
-  roles:
 include:
   - index.md
