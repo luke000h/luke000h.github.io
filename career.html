@@ -6,11 +6,11 @@ title: Career
 <h1>Career</h1>
 
 <ul>
-  <li>
-    fake item
-  </li>
   {% for post in site.posts %}
-    <li>
+    <li id="role">
+      <h2>{{ post.role }}</h2>
+      <h3>{{ post.company }}</h3>
+      <b>{{ post.from }} to {{ post.to }}</b>
       <p>{{ post.content }}</p>
     </li>
   {% endfor %}
