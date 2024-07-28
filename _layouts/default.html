@@ -2,12 +2,10 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset='utf-8'>
+    <title>{{ page.title }}</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    {% include head-custom.html %}
-
-{% seo %}
   </head>
 
   <body>
@@ -18,10 +16,7 @@
           <h1>Luke Hester</h1>
         </a>
 
-        <section id="downloads">
-            <a href="/career.md" class="btn">Career History</a>
-            <a href="/skills.md" class="btn">Skills and Qualifications</a>
-        </section>
+        {% include navigation.html %}
       </div>
     </header>
 
