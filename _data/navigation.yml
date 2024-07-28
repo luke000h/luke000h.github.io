@@ -1,0 +1,6 @@
+- name: Home
+  link: /
+- name: Career History
+  link: /career.md
+- name: Skills and Qualifications
+  link: /skills.md
