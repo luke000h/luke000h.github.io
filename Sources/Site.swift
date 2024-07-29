@@ -27,7 +27,6 @@ struct ExampleSite: Site {
     
     var pages: [any StaticPage] {
         Career()
-        Skills()
     }
 }
 
