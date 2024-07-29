@@ -1,8 +1,9 @@
 ___
-role: "Ammunition Technician"
-company: "British Army"
-from: "Jan 2013"
-to: "Sep 2017"
+
+author: "Ammunition Technician" 
+subtitle: "British Army"
+date: 2013-01-01
+lastModified: 2017-09-01
 ___
 
 Operations supervisor, responsible for managing and co-ordinating Bomb Disposal call outs in mainland UK, requiring effective communication to provide accurate advice and guidance to senior military and civilian authorities.

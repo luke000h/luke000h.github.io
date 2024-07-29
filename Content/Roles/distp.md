@@ -1,10 +1,17 @@
 ___
-role: "Special Response Bomb Disposal Team"
+role: ""
 company: "British Army"
 from: "Feb 2023"
 to: "May 2024"
 ___
+---
+subtitle: British Army
+date: 2023-02-13 00:00
+lastModified: 2024-05-01 00:00 
+tags: C/C++, Arduino, 
+---
 
+# Special Response Bomb Disposal Team
 
 Member of a team providing specialist technical bomb disposal response.
 

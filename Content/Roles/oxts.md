@@ -1,9 +1,15 @@
 ___
 role: "Product Test Engineer"
-company: "Oxford Technical Solutions"
+company: ""
 from: "May 2019"
 to: "Feb 2021"
 ___
+---
+subtitle: Oxford Technical Solutions
+date: 2013-01-13 00:00
+lastModified: 2017-09-01 00:00 
+tags:
+---
 
 Software suit user acceptance testing
 

@@ -1,9 +1,12 @@
-___
-role: "Software Developer"
-company: "CGI"
-from: "May 2024"
-to: "present"
-___
+---
+subtitle: CGI
+date: 2024-05-13 00:00
+lastModified: 
+tags: 
+---
+
+
+
 
 Software developer with a focus on infrastructure and testing.
 
