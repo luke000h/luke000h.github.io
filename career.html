@@ -7,11 +7,22 @@ title: Career
 
 <ul>
   {% for post in site.posts %}
-    <li id="role">
+    <li>
       <h2>{{ post.title }}</h2>
       <h3>{{ post.company }}</h3>
       <b>{{ post.from }} to {{ post.to }}</b>
       <p>{{ post.content | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>
+
+<ul>
+  {% for role in site.roles %}
+    <li id="role">
+      <h2>{{ role.title }}</h2>
+      <h3>{{ role.company }}</h3>
+      <b>{{ role.from }} to {{ role.to }}</b>
+      <p>{{ role.content | markdownify }}</p>
     </li>
   {% endfor %}
 </ul>
