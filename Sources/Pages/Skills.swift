@@ -1,15 +1,21 @@
+//
+//  File.swift
+//  
+//
+//  Created by Luke Hester on 29/07/2024.
+//
+
 import Foundation
 import Ignite
 
-struct Home: StaticPage {
-    
-    var title = "Home"
+struct Skills: StaticPage {
+    var title = "Career"
 
     func body(context: PublishingContext) -> [BlockElement] {
         
         
-        
-        Text("Hello world!")
+        Text("Skills")
             .font(.title1)
     }
 }
+

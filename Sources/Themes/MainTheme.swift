@@ -7,9 +7,14 @@ struct MyTheme: Theme {
             Head(for: page, in: context)
 
             Body {
+                NavigationBar(logo: "Luke Hester") {
+                            Link("Career", target: Career())
+                            Link("Skills", target: Skills())
+                        }
+                        .background(.black)
+                        .navigationBarStyle(.dark)
+                        .margin(.bottom, .large)
                 page.body
-
-                IgniteFooter()
             }
         }
     }
