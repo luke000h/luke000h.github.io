@@ -30,6 +30,7 @@ struct Career: StaticPage {
                         for tag in content.tags {
                             Badge(tag)
                                 .role(.primary)
+                            " "
                         }
                     }
                     .horizontalAlignment(.trailing)
@@ -42,7 +43,6 @@ struct Career: StaticPage {
                         .horizontalAlignment(.trailing)
                 }
             }
-//            .role(.dark)
             Spacer(size: .medium)
         }
         
