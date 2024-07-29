@@ -1,15 +1,11 @@
-___
-role: "Unexploded Ordnance Specialist"
-company: "Self employed"
-from: "Sep 2018"
-to: "May 2019"
-___
 ---
-subtitle: British Army
-date: 2021-02-01 00:00
-lastModified: 2024-02-01 00:00 
-tags: MS Power Automate, MS Power Apps, VBA
+subtitle: Self employed
+date: 2018-09-01 00:00
+lastModified: 2019-05-01 00:00 
+tags: HTML, CSS, JavaScript, Django
 ---
+
+# Unexploded Ordnance Specialist
 
 Various short-term projects nationwide
 

@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://luke000h.github.io/sitemap.xml

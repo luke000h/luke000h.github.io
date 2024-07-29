@@ -1,15 +1,11 @@
-___
-role: "Product Test Engineer"
-company: ""
-from: "May 2019"
-to: "Feb 2021"
-___
 ---
 subtitle: Oxford Technical Solutions
-date: 2013-01-13 00:00
-lastModified: 2017-09-01 00:00 
-tags:
+date: 2019-05-01 00:00
+lastModified: 2021-02-22 00:00 
+tags: Python, SQL, Testing
 ---
+
+# Product Test Engineer
 
 Software suit user acceptance testing
 

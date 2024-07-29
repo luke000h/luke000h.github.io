@@ -1,14 +1,8 @@
-___
-role: 
-company: "British Army"
-from: "Feb 2021"
-to: "Feb 2023"
-___
 ---
 subtitle: British Army
 date: 2021-02-01 00:00
-lastModified: 2024-05-01 00:00 
-tags: C/C++, Arduino, Embedded
+lastModified: 2024-02-01 00:00 
+tags: MS Power Automate, MS Power Apps, VBA
 ---
 
 # Operations Centre Ammunition Technical Support

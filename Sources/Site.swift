@@ -16,7 +16,7 @@ struct IgniteWebsite {
 
 struct ExampleSite: Site {    
     var name = "Luke Hester"
-    var titleSuffix = "Luke Hester"
+    var titleSuffix = " - Luke Hester"
     var url = URL("https://luke000h.github.io")
     var builtInIconsEnabled = true
 

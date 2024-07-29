@@ -9,10 +9,10 @@ import Foundation
 import Ignite
 
 struct Skills: StaticPage {
-    var title = "Career"
+    
+    var title = "Skills"
 
     func body(context: PublishingContext) -> [BlockElement] {
-        
         
         Text("Skills")
             .font(.title1)

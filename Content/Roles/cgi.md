@@ -2,11 +2,10 @@
 subtitle: CGI
 date: 2024-05-13 00:00
 lastModified: 
-tags: 
+tags: Jenkins, Python, Docker, Testing
 ---
 
-
-
+# Software Developer
 
 Software developer with a focus on infrastructure and testing.
 
