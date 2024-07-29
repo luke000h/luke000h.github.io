@@ -18,7 +18,7 @@ struct Career: StaticPage {
         Text("Career")
             .font(.title1)
         
-        for content in context.allContent {
+        for content in context.allContent.sorted(by: { $0.date > $1.date }) {
             
             Card() {
                 Text(content.body)
@@ -44,7 +44,7 @@ struct Career: StaticPage {
                         .horizontalAlignment(.trailing)
                 }
             }
-            Spacer(size: .medium)
+            .margin(.bottom)
         }
         
     }
