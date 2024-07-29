@@ -25,6 +25,7 @@ struct Career: StaticPage {
             }  header: {
                 Section {
                     Text("\(content.date.formatted(Date.FormatStyle().year().month(.abbreviated))) - \(content.lastModified.formatted(Date.FormatStyle().year().month(.abbreviated)))")
+                        .foregroundStyle(.steelBlue)
                         .horizontalAlignment(.leading)
                     Text {
                         for tag in content.tags {
