@@ -1,7 +1,7 @@
 ---
 subtitle: Self employed
 date: 2018-09-01 00:00
-lastModified: 2019-05-01 00:00 
+to: May 2019
 tags: HTML, CSS, JavaScript, Django
 ---
 

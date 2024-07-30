@@ -1,7 +1,7 @@
 ---
 subtitle: British Army
 date: 2013-01-13 00:00
-lastModified: 2017-09-01 00:00 
+to: Sep 2017
 tags:
 ---
 
