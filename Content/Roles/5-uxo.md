@@ -7,7 +7,8 @@ tags: HTML, CSS, JavaScript, Django
 
 # Unexploded Ordnance Specialist
 
-Various short-term projects nationwide
+Client facing role providing advice, guidance and the real time risk mitigation of unexploded ordnance.  
 
-- Client facing role providing advice and guidance on the risk of unexploded ordnance to construction workers.
-- In order to advertise my business in a lean manner, I taught myself full stack web development to designing, coding and hosting the site. This ignited my passion for software development.
+- Independence and confidence was demonstrated by traveling nationwide to deliver the service, including presenting briefs to clients.
+
+- In order to advertise my business in a lean manner, I taught myself full stack web development to design, code and host my business website. This ignited my passion for software development.

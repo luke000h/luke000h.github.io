@@ -7,24 +7,12 @@ tags: Python, SQL, Testing
 
 # Product Test Engineer
 
-Software suit user acceptance testing
+Responsible as the test lead for planning and executing testing on a Windows & Linux based software suite, hardware and firmware.
 
-Responsible as the test lead for planning and executing user acceptance testing on the standard software suite.
+- Created python scripts to automate processing and analysis of data streamlining previously manual processes.
 
-Hardware and firmware testing
+- Designed and prototyped a test data storage utility to allow for companywide sharing and minimise collection duplication. The utility was composed of a SQL database combined with a Python frontend.
 
-Collected and analysed data to validate new hardware and firmware features.
+- Setup, troubleshoot and tested range of hardware including inertial navigation units, LiDAR scanners and GPS cards.
 
-Created python scripts to automate processing and analysis of data.
-
-Designed and prototyped a test data storage utility to allow for companywide sharing and minimise collection duplication. The utility was composed of a SQL database combined with a Python frontend.
-
-LiDAR integration testing
-
-Full system in development and user acceptance testing involving validation of hardware data integration and new surveying software.
-
-Linux command line tool
-
-Worked as part of an Agile team to provide sprint release testing and final user acceptance testing.
-
-Created and delivered a customer training package on the tool to worldwide automotive engineers.
+- Gained a deep understanding of a new product by conducting Agile, in development testing. This led to being best placed to create a customer training package on the tool, presented to worldwide automotive engineers.
