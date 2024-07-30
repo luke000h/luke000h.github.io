@@ -2,7 +2,7 @@
 subtitle: CGI
 date: 2024-05-13 00:00
 to: Present
-tags: Jenkins, Python, Docker, Testing
+tags: Jenkins, Python, Docker
 ---
 
 # Software Developer

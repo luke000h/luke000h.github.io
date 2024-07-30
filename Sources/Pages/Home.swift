@@ -7,12 +7,46 @@ struct Home: StaticPage {
 
     func body(context: PublishingContext) -> [BlockElement] {
         
+        Card(imageName: "me.jpg") {
+            Text("Personal overview")
+                .foregroundStyle(.white)
+                .font(.title2)
+            Text("""
+            Luke has more than 9 years of experience in the military and 2 years as a Product Test Engineer. He has expertise in testing and software development.
+""")
+            .foregroundStyle(.white)
+            Text("Development experience in:")
+                .foregroundStyle(.white)
+                .font(.title3)
+            Text {
+                for content in context.allContent {
+                    for item in content.tags {
+                        Badge(item)
+                            .role(.primary)
+                        " "
+                    }
+                }
+            }
+            .horizontalAlignment(.leading)
+            Text("- In 2023 he won the Royal Logistics Corps Foundation Junior Initiate Award for operational process improvements in the delivery of over 320 military deployments.")
+                .foregroundStyle(.white)
+            Text("- Winner of the best App award, presented by Apple in the Defence Hackathon 2022.")
+            .foregroundStyle(.white)
+            Text("- Fitness enthusiast.")
+            .foregroundStyle(.white)
+        }
+        .contentPosition(.overlay)
+        .imageOpacity(0.5)
+        Spacer(size: .medium)
         Card {
-            """
-            Luke has more than 9 years of experience in the military and 2 years as a Product Test Engineer. He has expertise in testing and software development including test scripting, mobile app development with an app published to the iOS App Store, C development with a focus on hardware and implementing operational technology solutions using MS Power Platform. In 2023 he won the Royal Logistics Corps Foundation Junior Initiate Award for operational process improvements in the delivery of over 320 military deployments.
-            """
+            Text("As a former Army Physical Training Instructor and a love of iOS development, two passions collided with the release of an interval timer app thats intuitive to use and visually striking.")
+             Text("The app uses Model-View-ViewModel (MVVM) pattern in a mainly object oriented fashion but protocol oriented programming (POP) techniques are also utilised to produce some of the interfaces.")
         } header: {
-            "Personal overview"
+            Image(decorative: "segmentTimer.png")
+                .frame(maxWidth: 150)
+            Spacer(size: .medium)
+            Text("Segment Workout Timer")
+                .font(.title2)
         }
         Spacer(size: .medium)
         Card {
