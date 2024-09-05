@@ -7,7 +7,9 @@ struct Home: StaticPage {
 
     func body(context: PublishingContext) -> [BlockElement] {
         
-        Card(imageName: "me.jpg") {
+        Card(imageName: "me.jpg") {}
+        
+        Card {
             Text("Personal overview")
                 .foregroundStyle(.white)
                 .font(.title2)
