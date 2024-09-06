@@ -55,8 +55,8 @@ struct Home: StaticPage {
             Table {
                 Row {
                     "SAFe 6 DevOps"
-                    ""
-                    "In progress"
+                    "Intermediate"
+                    "August 2024"
                 }
                 Row {
                     "Project management"
