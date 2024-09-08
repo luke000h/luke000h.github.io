@@ -4,14 +4,23 @@ import Ignite
 struct Home: StaticPage {
     
     var title = "Home"
-
+    
     func body(context: PublishingContext) -> [BlockElement] {
-        
-        Card {
-            for content in context.content(ofType: "About") {
-                Text("Achievements")
+        Include("styles.html")
+        Section {
+            
+            Image("me.jpg", description: "Me climbing a boulder")
+                .resizable()
+                .class("profilePic")
+                .frame(width: 200)
+            Card {
+                let about = context.content(tagged: "about")[0]
+                Text(about.title).font(.title2)
+                Text(about.body)
             }
+            .width(2)
         }
+        .columns(3)
         
         Card {
             Text("Achievements")
