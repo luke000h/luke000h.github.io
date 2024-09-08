@@ -12,15 +12,14 @@ struct Home: StaticPage {
             Image("me.jpg", description: "Me climbing a boulder")
                 .resizable()
                 .class("profilePic")
-                .frame(width: 200)
+                .width(4)
             Card {
                 let about = context.content(tagged: "about")[0]
                 Text(about.title).font(.title2)
                 Text(about.body)
             }
-            .width(2)
+            .width(8)
         }
-        .columns(3)
         
         Card {
             Text("Achievements")
