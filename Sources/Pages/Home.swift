@@ -7,34 +7,19 @@ struct Home: StaticPage {
 
     func body(context: PublishingContext) -> [BlockElement] {
         
-        Card(imageName: "me.jpg") {}
+        Card {
+            for content in context.content(ofType: "About") {
+                Text("Achievements")
+            }
+        }
         
         Card {
-            Text("Personal overview")
+            Text("Achievements")
                 .foregroundStyle(.white)
                 .font(.title2)
-            Text("""
-            Luke has more than 9 years of experience in the military and 2 years as a Product Test Engineer. He has expertise in testing and software development.
-""")
-            .foregroundStyle(.white)
-            Text("Development experience in:")
-                .foregroundStyle(.white)
-                .font(.title3)
-            Text {
-                for content in context.allContent {
-                    for item in content.tags {
-                        Badge(item)
-                            .role(.primary)
-                        " "
-                    }
-                }
-            }
-            .horizontalAlignment(.leading)
             Text("- In 2023 he won the Royal Logistics Corps Foundation Junior Initiate Award for operational process improvements in the delivery of over 320 military deployments.")
                 .foregroundStyle(.white)
             Text("- Winner of the best App award, presented by Apple in the Defence Hackathon 2022.")
-            .foregroundStyle(.white)
-            Text("- Fitness enthusiast.")
             .foregroundStyle(.white)
         }
         .contentPosition(.overlay)
