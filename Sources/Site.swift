@@ -1,10 +1,11 @@
 import Foundation
+import AppKit
 import Ignite
 
 @main
 struct IgniteWebsite {
     static func main() async {
-        let site = ExampleSite()
+        let site = CVSite()
 
         do {
             try await site.publish()
@@ -14,7 +15,7 @@ struct IgniteWebsite {
     }
 }
 
-struct ExampleSite: Site {    
+struct CVSite: Site {
     var name = "Luke Hester"
     var titleSuffix = " - Luke Hester"
     var url = URL("https://luke000h.github.io")

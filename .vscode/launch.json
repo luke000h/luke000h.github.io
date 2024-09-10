@@ -23,6 +23,30 @@
             "name": "Release IgniteStarter",
             "program": "${workspaceFolder:luke000h.github.io}/.build/release/IgniteStarter",
             "preLaunchTask": "swift: Build Release IgniteStarter"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:luke000h.github.io}",
+            "name": "Debug CVSite",
+            "program": "${workspaceFolder:luke000h.github.io}/.build/debug/CVSite",
+            "preLaunchTask": "swift: Build Debug CVSite"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:luke000h.github.io}",
+            "name": "Release CVSite",
+            "program": "${workspaceFolder:luke000h.github.io}/.build/release/CVSite",
+            "preLaunchTask": "swift: Build Release CVSite"
         }
     ]
 }
