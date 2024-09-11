@@ -11,8 +11,6 @@ struct Career: StaticPage {
     
     var title = "Career"
     
-    
-
     func body(context: PublishingContext) -> [BlockElement] {
         
         Text("Career")

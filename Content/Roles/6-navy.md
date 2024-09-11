@@ -5,7 +5,7 @@ to: Sep 2018
 tags:
 ---
 
-# Mine Clearance Diver
+### Mine Clearance Diver
 
 Dive team member providing underwater bomb disposal.
 

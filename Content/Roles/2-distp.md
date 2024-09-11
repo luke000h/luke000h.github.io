@@ -5,7 +5,7 @@ to: May 2024
 tags: C/C++, Arduino, Embedded
 ---
 
-# Special Response Bomb Disposal Team Member
+### Special Response Bomb Disposal Operative
 
 Member of a team providing specialist technical bomb disposal response.
 

@@ -5,7 +5,7 @@ to: Sep 2017
 tags:
 ---
 
-# Ammunition Technician
+### Ammunition Technician
 
 Conducted technical training that resulted in being a subject matter expert in the full lifecycle of ammunition through to destruction.
 
