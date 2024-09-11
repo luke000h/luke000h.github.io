@@ -10,7 +10,7 @@ struct Home: StaticPage {
         Section {
             Image("me.jpg", description: "Me climbing a boulder")
                 .resizable()
-                .class("profilePic")
+                .class("roundedCorners")
                 .width(4)
             Section {
                 let about = context.content(tagged: "about")[0]

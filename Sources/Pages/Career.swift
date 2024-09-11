@@ -16,7 +16,7 @@ struct Career: StaticPage {
         Text("Career")
             .font(.title1)
         
-        for content in context.allContent.sorted(by: { $0.date > $1.date }) {
+        for content in context.content(ofType: "Roles").sorted(by: { $0.date > $1.date }) {
             
             Card() {
                 Text(content.body)
