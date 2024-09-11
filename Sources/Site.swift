@@ -28,7 +28,6 @@ struct CVSite: Site {
     
     var pages: [any StaticPage] {
         Career()
-        CV()
     }
 }
 
