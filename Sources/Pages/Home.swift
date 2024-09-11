@@ -39,11 +39,13 @@ struct Home: StaticPage {
             Text("As a former Army Physical Training Instructor and a love of iOS development, two passions collided with the release of an interval timer app thats intuitive to use and visually striking.")
              Text("The app uses Model-View-ViewModel (MVVM) pattern in a mainly object oriented fashion but protocol oriented programming (POP) techniques are also utilised to produce some of the interfaces.")
         } header: {
-            Image(decorative: "segmentTimer.png")
-                .frame(maxWidth: 150)
-            Spacer(size: .medium)
-            Text("Segment Workout Timer")
-                .font(.title2)
+            Section {
+                Image(decorative: "segmentTimer.png")
+                    .resizable()
+                    .class("roundedCorners")
+                Text("Segment Workout Timer")
+                    .font(.title2)
+            }
         }
         Spacer(size: .medium)
         Card {
