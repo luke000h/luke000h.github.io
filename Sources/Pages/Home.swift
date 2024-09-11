@@ -11,11 +11,14 @@ struct Home: StaticPage {
             Image("me.jpg", description: "Me climbing a boulder")
                 .resizable()
                 .class("roundedCorners")
+                .class("dropShadow")
+                .margin(20)
                 .width(4)
-            Section {
+            Card {
                 let about = context.content(tagged: "about")[0]
-                Text(about.title).font(.title2)
                 Text(about.body)
+            } header: {
+                Text("About").font(.title2)
             }
             .width(8)
         }
