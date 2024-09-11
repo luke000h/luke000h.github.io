@@ -15,24 +15,28 @@ for role_file in role_files:
     date_from = datetime.strptime(metadata['date'], '%Y-%m-%d %H:%M')
     date_from = date_from.strftime("%b %Y")
     date_to = metadata['to']
-    roles += date_from + " - " + date_to + "\n"
+    roles += f"{date_from} to {date_to} - **{metadata['role']}** - {metadata['org']} <br>"
     roles += role['body'] + "\n"
 
-cv = f"""
+page1 = f"""
 # Luke Hester
 
 {about['body']}
 
 ---
 
+"""
+
+page2 = f"""
+## Career history
+
 {roles}
 
 """
 
 pdf = MarkdownPdf(toc_level=2)
-
-pdf.add_section(Section(cv, toc=False))
-print(role_files)
+pdf.add_section(Section(page1, toc=False))
+pdf.add_section(Section(page2, toc=False))
 
 pdf.meta["title"] = "Luke Hester CV"
 pdf.meta["author"] = "Luke Hester"

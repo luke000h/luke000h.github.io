@@ -24,16 +24,16 @@ struct Home: StaticPage {
         }
         
         Card {
-            Text("Achievements")
-                .foregroundStyle(.white)
-                .font(.title2)
-            Text("- In 2023 he won the Royal Logistics Corps Foundation Junior Initiate Award for operational process improvements in the delivery of over 320 military deployments.")
-                .foregroundStyle(.white)
-            Text("- Winner of the best App award, presented by Apple in the Defence Hackathon 2022.")
-            .foregroundStyle(.white)
+            List {
+                for award in context.content(ofType: "Awards") {
+                    Text(award.body)
+                }
+            }
+            .listStyle(.custom("🏆"))
+        } header: {
+            Text("Awards").font(.title2)
         }
-        .contentPosition(.overlay)
-        .imageOpacity(0.5)
+        
         Spacer(size: .medium)
         Card {
             Text("As a former Army Physical Training Instructor and a love of iOS development, two passions collided with the release of an interval timer app thats intuitive to use and visually striking.")
@@ -41,7 +41,7 @@ struct Home: StaticPage {
         } header: {
             Section {
                 Image(decorative: "segmentTimer.png")
-                    .resizable()
+                    .frame(width: 60, height: 60)
                     .class("roundedCorners")
                 Text("Segment Workout Timer")
                     .font(.title2)

@@ -18,6 +18,9 @@ struct Career: StaticPage {
         
         for content in context.content(ofType: "Roles").sorted(by: { $0.date > $1.date }) {
             
+            let role = content.metadata["role"] ?? ""
+            let organisation = content.metadata["org"] ?? ""
+            
             Card() {
                 Text(content.body)
             }  header: {
@@ -35,10 +38,10 @@ struct Career: StaticPage {
                     .horizontalAlignment(.trailing)
                 }
                 Section {
-                    Text(content.title)
+                    Text(role as! InlineElement)
                         .fontWeight(.bold)
                         .horizontalAlignment(.leading)
-                    Text(content.subtitle ?? "")
+                    Text(organisation as! InlineElement)
                         .horizontalAlignment(.trailing)
                 }
             }
