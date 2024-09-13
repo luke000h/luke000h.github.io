@@ -39,32 +39,29 @@ struct Home: StaticPage {
              Text("The app uses Model-View-ViewModel (MVVM) pattern in a mainly object oriented fashion but protocol oriented programming (POP) techniques are also utilised to produce some of the interfaces.")
         } header: {
             Section {
-                Image(decorative: "segmentTimer.png")
-                    .frame(width: 60, height: 60)
-                    .class("roundedCorners")
+                Image(decorative: "/images/segmentTimer.png")
+                    .class("roundedCorners icon")
                 Text("Segment Workout Timer")
                     .font(.title2)
+                    .width(9)
             }
         }
         Spacer(size: .medium)
-        Card {
-            Section {
-                for qual in context.content(ofType: "Qualifications").sorted(by: { $0.date > $1.date }) {
-                    
-                    if let image = qual.image {
-                        Image("https://luke000h.github.io/images/badges/\(image)")
-                            .resizable()
-                            .width(2)
-                    }
+        Divider()
+        Section {
+            for qual in context.content(ofType: "Qualifications").sorted(by: { $0.date > $1.date }) {
+                
+                if let image = qual.image {
+                    Image("https://luke000h.github.io/images/badges/\(image)")
+                        .class("icon")
                 }
             }
-            Text {
-                Link("Qualifications", target: Skills())
-                    .linkStyle(.button)
-            }
-            .horizontalAlignment(.center)
-        } header: {
-            "Qualifications"
         }
+        Text {
+            Link("Qualifications", target: Skills())
+                .linkStyle(.button)
+        }
+        .horizontalAlignment(.center)
+        Spacer(size: .medium)
     }
 }
