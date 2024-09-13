@@ -48,18 +48,17 @@ struct Home: StaticPage {
         }
         Spacer(size: .medium)
         Divider()
-        Section {
-            for qual in context.content(ofType: "Qualifications").sorted(by: { $0.date > $1.date }) {
-                
-                if let image = qual.image {
-                    Image("https://luke000h.github.io/images/badges/\(image)")
-                        .class("icon")
-                }
+        for qual in context.content(ofType: "Qualifications").sorted(by: { $0.date > $1.date }) {
+            
+            if let image = qual.image {
+                Image("https://luke000h.github.io/images/badges/\(image)")
+                    .class("icon")
             }
         }
         Text {
             Link("Qualifications", target: Skills())
                 .linkStyle(.button)
+                .role(.light)
         }
         .horizontalAlignment(.center)
         Spacer(size: .medium)
