@@ -10,12 +10,25 @@ import Ignite
 
 struct Skills: StaticPage {
     
-    var title = "Skills"
+    var title = "Skills & Qualifications"
 
     func body(context: PublishingContext) -> [BlockElement] {
         
-        Text("Skills")
-            .font(.title1)
+        Card {
+            for qual in context.content(ofType: "Quals").sorted(by: { $0.date > $1.date }) {
+                Section {
+                    if let image = qual.image {
+                        Image(image)
+                            .frame(width:100)
+                    }
+                    if let qualName = qual.metadata["qualification"] {
+                        Text("\(qualName)")
+                    }
+                }
+            }
+        } header: {
+            Text("Qualifications")
+        }
     }
 }
 

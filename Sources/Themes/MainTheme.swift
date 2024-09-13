@@ -8,7 +8,8 @@ struct MyTheme: Theme {
 
             Body {
                 NavigationBar(logo: "Luke Hester") {
-                            Link("Career", target: Career())
+                    Link("Career", target: Career())
+                    Link("Skills", target: Skills())
                     Link("CV", target: "https://luke000h.github.io/LukeHester.pdf")
                         }
                         .background(.black)

@@ -12,7 +12,6 @@ struct Home: StaticPage {
                 .resizable()
                 .class("roundedCorners")
                 .class("dropShadow")
-                .margin(20)
                 .width(4)
             Card {
                 let about = context.content(tagged: "about")[0]
