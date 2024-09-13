@@ -2,7 +2,7 @@
 qualification: Certified SAFe® 6 DevOps Practitioner
 cert: https://www.credly.com/badges/6d19a8ef-3057-4327-81ee-861a67fb3b33/public_url
 date: 2024-08-23 00:00
-image: certified-safe-6-devops-practitioner.png
+image: safeDevOps.png
 tags: Agile, CI/CD
 ---
 

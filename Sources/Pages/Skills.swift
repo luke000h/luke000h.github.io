@@ -18,7 +18,7 @@ struct Skills: StaticPage {
             for qual in context.content(ofType: "Qualifications").sorted(by: { $0.date > $1.date }) {
                 Section {
                     if let image = qual.image {
-                        Image(image)
+                        Image("images/badges/\(image)")
                             .frame(width:100)
                     }
                     if let qualName = qual.metadata["qualification"] {
