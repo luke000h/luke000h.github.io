@@ -15,7 +15,7 @@ struct Skills: StaticPage {
     func body(context: PublishingContext) -> [BlockElement] {
         
         Card {
-            for qual in context.content(ofType: "Quals").sorted(by: { $0.date > $1.date }) {
+            for qual in context.content(ofType: "Qualifications").sorted(by: { $0.date > $1.date }) {
                 Section {
                     if let image = qual.image {
                         Image(image)
