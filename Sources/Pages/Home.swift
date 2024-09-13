@@ -8,10 +8,9 @@ struct Home: StaticPage {
     func body(context: PublishingContext) -> [BlockElement] {
         Include("styles.html")
         Section {
-            Image("me.jpg", description: "Me climbing a boulder")
+            
+            Image(decorative: "me.jpg")
                 .resizable()
-                .class("roundedCorners")
-                .class("dropShadow")
                 .width(4)
             Card {
                 let about = context.content(tagged: "about")[0]
