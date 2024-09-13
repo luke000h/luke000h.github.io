@@ -29,7 +29,6 @@ struct Skills: StaticPage {
                             Link("\(qualName)", target: "\(linkToCert)")
                         }
                     }
-                    
                 }
             }
         } header: {

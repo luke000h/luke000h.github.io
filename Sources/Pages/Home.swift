@@ -48,52 +48,21 @@ struct Home: StaticPage {
         }
         Spacer(size: .medium)
         Card {
-            Table {
-                Row {
-                    "SAFe 6 DevOps"
-                    "Intermediate"
-                    "August 2024"
+            Section {
+                for qual in context.content(ofType: "Qualifications").sorted(by: { $0.date > $1.date }) {
+                    
+                    if let image = qual.image {
+                        Image("https://luke000h.github.io/images/badges/\(image)")
+                            .resizable()
+                            .width(2)
+                    }
                 }
-                Row {
-                    "Project management"
-                    "Level 3"
-                    "July 2024"
-                }
-                Row {
-                    "AWS Cloud"
-                    "Practitioner"
-                    "June 2024"
-                }
-                Row {
-                    "ISTQB Tester"
-                    "Foundation"
-                    "May 2024"
-                }
-                Row {
-                    "Harvard CS50x Intro Computer Science"
-                    "Certificate"
-                    "March 2024"
-                }
-                Row {
-                    "Maths A level"
-                    "A"
-                    "March 2008"
-                }
-                Row {
-                    "Physics A level"
-                    "B"
-                    "March 2008"
-                }
-                Row {
-                    "Chemistry A level"
-                    "B"
-                    "March 2008"
-                }
-            } header: {
-                "Qualification"
-                "Grade/Level"
-                "Completed"
             }
+            Text {
+                Link("Qualifications", target: Skills())
+                    .linkStyle(.button)
+            }
+            .horizontalAlignment(.center)
         } header: {
             "Qualifications"
         }
