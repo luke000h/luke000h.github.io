@@ -57,7 +57,7 @@ struct Home: StaticPage {
         }
         Spacer(size: .medium)
         Text {
-            Link("View all skills", target: Skills())
+            Link("Skills", target: Skills())
                 .linkStyle(.button)
                 .role(.light)
         }

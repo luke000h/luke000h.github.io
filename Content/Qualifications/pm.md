@@ -1,5 +1,5 @@
 ---
-qualification: Level 3 
+qualification: Level 3 Project Management
 institute: The Skills Network
 cert: https://luke000h.github.io/docs/PM-Level3.pdf
 date: 2024-08-23 00:00
