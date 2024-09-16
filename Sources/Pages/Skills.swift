@@ -30,11 +30,9 @@ struct Skills: StaticPage {
                             Text {
                                 Link("\(qualName)", target: "\(linkToCert)")
                             }
-                            .font(.title3)
                             .fontWeight(.bold)
-                            Text("\(institute)")
-                                .fontWeight(.bold)
-                            Text("\(Calendar.current.component(.year, from: qual.date))")
+                            Text("\(Text(qual.date.formatted(.dateTime.year()))) - \(institute)")
+                                
                         }
                     }
                     .width(10)
