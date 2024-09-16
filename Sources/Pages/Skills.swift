@@ -31,7 +31,7 @@ struct Skills: StaticPage {
                                 Link("\(qualName)", target: "\(linkToCert)")
                             }
                             .fontWeight(.bold)
-                            Text("\(Text(qual.date.formatted(.dateTime.year()))) - \(institute)")
+                            Text("\(qual.date.formatted(.dateTime.year())) - \(institute)")
                                 
                         }
                     }
