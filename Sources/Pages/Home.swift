@@ -15,7 +15,7 @@ struct Home: StaticPage {
                 .width(4)
             Card {
                 let about = context.content(tagged: "about")[0]
-                Text(about.body)
+                Text(markdown: about.body)
             } header: {
                 Text("About").font(.title2)
             }
