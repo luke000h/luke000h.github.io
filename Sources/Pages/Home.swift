@@ -12,25 +12,23 @@ struct Home: StaticPage {
                 .resizable()
                 .class("roundedCorners")
                 .class("dropShadow")
-                .width(3)
-            Spacer(size: .medium)
-                .width(1)
-            Card {
-                let about = context.content(tagged: "about")[0]
-                Text(about.body)
-                Spacer(size: .medium)
-                Text {
-                    Link("Career History", target: Career())
-                        .linkStyle(.button)
-                        .role(.light)
-                }
-                .horizontalAlignment(.center)
-            } header: {
-                Text("About").font(.title2)
-            }
-            .width(8)
+                .width(4)
         }
         
+        Divider().margin(.vertical)
+        
+        Group {
+            let about = context.content(tagged: "about")[0]
+            Text(about.body)
+            Spacer(size: .medium)
+            Text {
+                Link("Career History", target: Career())
+                    .linkStyle(.button)
+                    .role(.light)
+            }
+            .horizontalAlignment(.center)
+        }
+            
         Spacer(size: .medium)
         
         Card {
