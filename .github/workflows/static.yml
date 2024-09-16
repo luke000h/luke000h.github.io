@@ -22,18 +22,18 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
-    runs-on: macos-latest
+  # build:
+  #   runs-on: macos-latest
 
-    steps:
-    - uses: actions/checkout@v4
-    - name: Build
-      run: swift build -v
-    - name: Upload built site files
-      uses: actions/upload-artifact@v4
-      with:
-        name: built_site
-        path: './Build'
+  #   steps:
+  #   - uses: actions/checkout@v4
+  #   - name: Build
+  #     run: swift build -v
+  #   - name: Upload built site files
+  #     uses: actions/upload-artifact@v4
+  #     with:
+  #       name: built_site
+  #       path: './Build'
       
   deploy:
     environment:
@@ -41,12 +41,12 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Download built site files
-        uses: actions/download-artifact@v4
-        with:
-          name: built_site
-      # - name: Checkout
-      #   uses: actions/checkout@v4
+      # - name: Download built site files
+      #   uses: actions/download-artifact@v4
+      #   with:
+      #     name: built_site
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
