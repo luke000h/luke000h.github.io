@@ -7,13 +7,9 @@ struct Home: StaticPage {
     
     func body(context: PublishingContext) -> [BlockElement] {
         Include("styles.html")
-        Section {
-            Image("/images/me.jpg", description: "Me climbing a boulder")
-                .resizable()
-                .class("roundedCorners")
-                .class("dropShadow")
-                .width(4)
-        }
+        Image("/images/me.jpg", description: "Me climbing a boulder")
+            .frame(width: 200)
+            .class("roundedCorners dropShadow")
         
         Divider().margin(.vertical)
         
@@ -28,8 +24,7 @@ struct Home: StaticPage {
             }
             .horizontalAlignment(.center)
         }
-            
-        Spacer(size: .medium)
+        .margin()
         
         Card {
             List {
