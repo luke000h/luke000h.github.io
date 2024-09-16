@@ -1,5 +1,5 @@
 ---
-role: Solutions Engineer
+role: Bomb Disposal Technical Specialist and Training System Developer
 org: British Army
 date: 2023-02-13 00:00
 to: May 2024

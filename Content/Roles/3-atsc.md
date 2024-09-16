@@ -1,5 +1,5 @@
 ---
-role: Operations Centre Ammunition Technical Support
+role: UK HQ Bomb Disposal Operations Digital Transformation Lead
 org: British Army
 date: 2021-02-01 00:00
 to: Feb 2023
