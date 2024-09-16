@@ -8,7 +8,7 @@ struct Home: StaticPage {
     func body(context: PublishingContext) -> [BlockElement] {
         Include("styles.html")
         Image("/images/me.jpg", description: "Me climbing a boulder")
-            .frame(width: 200)
+            .frame(width: 200, alignment: .center)
             .class("roundedCorners dropShadow")
         
         Divider().margin(.vertical)
