@@ -1,5 +1,6 @@
 ---
 qualification: AWS Certified Cloud Practitioner
+institute: Amazon Web Services (AWS)
 cert: https://www.credly.com/badges/f371521f-769b-4c84-90e9-8f095d24031a/public_url
 date: 2024-06-14 00:00
 image: awsCloudPractitioner.png
