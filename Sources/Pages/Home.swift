@@ -18,7 +18,7 @@ struct Home: StaticPage {
                 Text(about.body)
                 Spacer(size: .medium)
                 Text {
-                    Link("Full Career", target: Career())
+                    Link("Career History", target: Career())
                         .linkStyle(.button)
                         .role(.light)
                 }

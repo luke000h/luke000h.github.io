@@ -12,7 +12,7 @@ struct MyTheme: Theme {
                     Link("Skills", target: Skills())
                     Link("PDF CV", target: "https://luke000h.github.io/docs/LukeHester.pdf")
                         .linkStyle(.button)
-                        .role(.light)
+                        .role(.secondary)
                         }
                         .background(.black)
                         .navigationBarStyle(.dark)
