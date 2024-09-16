@@ -10,9 +10,7 @@ struct MyTheme: Theme {
                 NavigationBar(logo: "Luke Hester") {
                     Link("Career", target: Career())
                     Link("Skills", target: Skills())
-                    Link("PDF CV", target: "https://luke000h.github.io/docs/LukeHester.pdf")
-                        .linkStyle(.button)
-                        .role(.secondary)
+                    Link("PDF CV⬇︎", target: "https://luke000h.github.io/docs/LukeHester.pdf")
                         }
                         .background(.black)
                         .navigationBarStyle(.dark)
