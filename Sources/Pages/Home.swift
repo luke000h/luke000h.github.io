@@ -12,7 +12,9 @@ struct Home: StaticPage {
                 .resizable()
                 .class("roundedCorners")
                 .class("dropShadow")
-                .width(4)
+                .width(3)
+            Spacer(size: .medium)
+                .width(1)
             Card {
                 let about = context.content(tagged: "about")[0]
                 Text(about.body)
@@ -28,6 +30,8 @@ struct Home: StaticPage {
             }
             .width(8)
         }
+        
+        Spacer(size: .medium)
         
         Card {
             List {
