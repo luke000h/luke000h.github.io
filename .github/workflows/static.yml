@@ -22,22 +22,31 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
+  build:
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build
+      run: swift build -v
+    - name: Upload built site files
+      uses: actions/upload-artifact@v4
+      with:
+        name: built_site
+        path: './Build'
+      
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Install and Build Swift
-        run: swift run 
-      - name: Set Public Folder
-        run: |
-            mkdir .public
-            cp -r Output/* .public
-            mv .public public
+      - name: Download built site files
+        uses: actions/download-artifact@v4
+        with:
+          name: built_site
+      # - name: Checkout
+      #   uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
