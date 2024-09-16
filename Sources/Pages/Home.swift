@@ -10,7 +10,7 @@ struct Home: StaticPage {
         Group {
             Image("/images/me.jpg", description: "Me climbing a boulder")
                 .frame(width: 200)
-                .class("roundedCorners dropShadow")
+                .class("roundedCorners dropShadow center")
         }
         .frame(width: .max, alignment: .center)
         
