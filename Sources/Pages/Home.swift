@@ -15,7 +15,14 @@ struct Home: StaticPage {
                 .width(4)
             Card {
                 let about = context.content(tagged: "about")[0]
-                Text(markdown: about.body)
+                Text(about.body)
+                Spacer(size: .medium)
+                Text {
+                    Link("Full Career", target: Career())
+                        .linkStyle(.button)
+                        .role(.light)
+                }
+                .horizontalAlignment(.center)
             } header: {
                 Text("About").font(.title2)
             }
