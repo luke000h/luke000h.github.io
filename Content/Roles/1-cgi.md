@@ -3,10 +3,11 @@ role: Software Developer
 org: CGI
 date: 2024-05-13 00:00
 to: Present
-tags: Jenkins, Python, Docker
+tags: CI/CD, Python, SQL, Docker
 ---
 
-Software developer with a focus on infrastructure and testing.
-- Simplified the process of creating build pipeline scripts, improving efficiency by reducing boilerplate code. This was achieved with a Jenkins shared library that reduced the pipeline code to a single function call.
-- Setup and introduced Docker containers to solve dependancy issues in projects.
-- Built a website crawler to test site access and dynamically provide site locators for UI testing saving manual efforts and improving reliability.
+Served as a consultant, focusing on understanding client requirements to design and implement tailored solutions.
+- Utilised Python, SQL and Web development within projects.
+- Applied automated data driven testing to projects.
+- Worked to simplify CI/CD pipelines by introducing reusable components in shared libraries.
+- Integrated Docker containers into pre-existing projects to standardise build environments and solve dependancy issues.

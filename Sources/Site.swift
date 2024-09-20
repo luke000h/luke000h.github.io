@@ -1,5 +1,4 @@
 import Foundation
-import AppKit
 import Ignite
 
 @main
@@ -16,9 +15,10 @@ struct IgniteWebsite {
 }
 
 struct CVSite: Site {
+    var url: URL = URL(string: "https://luke000h.github.io")!
     var name = "Luke Hester"
     var titleSuffix = " - Luke Hester"
-    var url = URL("https://luke000h.github.io")
+    
     var builtInIconsEnabled = true
 
     var author = "Luke Hester"

@@ -6,7 +6,7 @@
       "location" : "https://github.com/twostraws/Ignite.git",
       "state" : {
         "branch" : "main",
-        "revision" : "5941faccd2e4d662b417c85097f27a7ae3cf93ba"
+        "revision" : "ee8aad33505d4fe04e435044fef26ed7792b06e1"
       }
     },
     {
@@ -24,7 +24,7 @@
       "location" : "https://github.com/swiftlang/swift-cmark.git",
       "state" : {
         "branch" : "gfm",
-        "revision" : "fc07ab5da47975c5ef5f336acadfc02e8f706d30"
+        "revision" : "b022b08312decdc46585e0b3440d97f6f22ef703"
       }
     },
     {
@@ -33,7 +33,7 @@
       "location" : "https://github.com/swiftlang/swift-markdown.git",
       "state" : {
         "branch" : "main",
-        "revision" : "2c126ce9fa33fc8b48258ee27ab51b33989161a3"
+        "revision" : "2829eefc2e4f8ee7270b8e8d3e5757b98fe06b6c"
       }
     }
   ],
